@@ -1,0 +1,66 @@
+@mixin bg1 {
+    background: #ea4798;
+}
+
+$color1: #ea4798;
+
+header {
+
+
+    box-shadow: 0 5px 5px #0000001f;
+
+    nav {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 10px 0;
+        align-items: center;
+
+
+        .logo {
+            max-width: 80px;
+
+            a {
+                display: block;
+            }
+        }
+
+        .items {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            width: 40%;
+
+            .item {
+
+                a {
+                    position: relative;
+                    transition: .3s;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $color1;
+
+                        &:before {
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+
+                    &:before {
+                        content: '';
+                        left: 50%;
+                        transition: .3s;
+                        border-radius: 5px;
+                        right: 50%;
+                        height: 2px;
+                        bottom: 0;
+                        position: absolute;
+                        @include bg1;
+                    }
+                }
+            }
+        }
+    }
+
+}

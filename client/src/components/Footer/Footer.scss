@@ -1,0 +1,83 @@
+$color1: #ea4798;
+
+footer {
+    background: #41322a;
+    padding: 0 10px;
+
+    .footer_con {
+        padding: 40px 0;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+
+        .footer_nav {
+            a {
+                display: block;
+
+                &:hover {
+                    color: $color1;
+                }
+            }
+
+        }
+
+        .social_media {
+            h5 {
+                font-size: 25px;
+            }
+
+            .links {
+                display: flex;
+                gap: 10px;
+
+                a {
+                    font-size: 30px;
+
+
+                }
+            }
+        }
+
+        .copyright_con {
+            .newsletter {
+                margin-bottom: 40px;
+
+                h5 {
+                    font-size: 30px;
+                }
+
+                form {
+                    display: flex;
+
+                    input {
+                        font-size: 18px;
+                        padding: 10px;
+                        border-radius: 5px 0 0 5px;
+                        border: none;
+                    }
+
+                    button {
+                        background: #d7b47e;
+                        color: #fff;
+                        font-size: 18px;
+                        padding: 0 20px;
+                        border-radius: 0 5px 5px 0;
+                        border: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: $color1;
+                        }
+                    }
+                }
+
+
+            }
+
+            .copyright {}
+
+        }
+
+
+    }
+}

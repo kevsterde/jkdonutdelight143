@@ -1,0 +1,112 @@
+#drinks {
+
+
+    #banner {
+        .wrapper {
+            .bnr_con {
+                padding: 40px 0;
+
+                .slider {
+                    position: relative;
+
+                    figure {
+                        img {}
+                    }
+
+                    h1 {
+                        position: absolute;
+                        left: 20px;
+                        text-align: center;
+                        top: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    #main_area {
+        .main_con {
+            padding: 40px 0;
+
+            main {
+                max-width: 1000px;
+                margin: auto;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+
+                h2 {
+                    flex-grow: 2;
+                }
+
+                p {
+                    flex-grow: 1;
+                    flex-shrink: 1.3;
+                }
+
+            }
+        }
+    }
+
+
+    #bottom1 {
+        .wrapper {
+            .btm1_con {
+                padding: 40px 0;
+                display: flex;
+                justify-content: space-evenly;
+                gap: 30px;
+
+
+            }
+        }
+    }
+
+    #bottom2 {
+        .wrapper {
+            .btm2_con {
+                padding: 40px 0;
+                position: relative;
+
+                figure {
+                    height: 500px;
+
+                    img {
+
+                        object-fit: cover;
+                        height: 100%;
+                    }
+                }
+
+                .btm2_info {
+                    position: absolute;
+                    bottom: 20%;
+                    max-width: 70%;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    text-align: center;
+                    color: #fff;
+
+
+                    p {
+                        text-shadow: 0 0 5px #000;
+                    }
+
+                    .btn_style {
+                        margin: 30px auto 0;
+                        border: 1px solid transparent;
+
+                        &:hover {
+                            background: transparent;
+                            border: 1px solid #ea4798;
+                            color: #ea4798;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}

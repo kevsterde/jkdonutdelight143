@@ -1,0 +1,93 @@
+$color1: #ea4798;
+$color2: #d6b47a;
+$color3: #41322a;
+
+#home {
+
+
+    #banner {
+        .wrapper {
+            .bnr_con {
+                padding: 40px 0 0;
+
+                .slider {
+                    position: relative;
+
+                    overflow: hidden;
+
+                    .container {
+                        display: flex;
+                        width: 100%;
+                        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                        figure {
+                            position: relative;
+
+                            img {
+                                width: 1200px;
+                            }
+                        }
+
+
+                    }
+
+                    .btn {
+
+                        .prev {
+                            background: red;
+                            position: absolute;
+                            top: 50%;
+                            left: 10px;
+                            width: 20px;
+                            aspect-ratio: 1 / 1;
+                            cursor: pointer;
+                        }
+
+                        .next {
+                            background: red;
+                            position: absolute;
+                            top: 50%;
+                            right: 10px;
+                            width: 20px;
+                            aspect-ratio: 1 / 1;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    #main_area {
+        .main_con {
+            padding: 40px 0;
+
+            main {
+                max-width: 1000px;
+                margin: auto;
+
+                h1 {
+                    font-size: 24px;
+                    font-weight: 300;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #bottom1 {
+        height: 600px;
+        overflow: hidden;
+    }
+
+    #bottom2 {
+        .btm2_con {
+            padding: 80px 20px;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 40px;
+        }
+    }
+
+}
