@@ -34,9 +34,40 @@ function Menu() {
             name: 'Caviar Chocolate',
             img: 'http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/donuts/a97bafad-2f9b-4148-9fc0-114ec47264c0.jpg',
         },]
+    const data_drinks = [
+        {
+            id: 1,
+            name: 'Blueberry Yogurt Frappe',
+            img: 'http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/a0b26113-f804-4839-8303-f50f3ea00ce4.jpg',
+        },
+        {
+            id: 2,
+            name: 'Choco Forest Frappe',
+            img: 'http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/dbd8793f-bb89-43be-a061-abce7112ce9a.jpg',
+        },
+        {
+            id: 3,
+            name: 'Chocolate Frappe',
+            img: 'http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/2a1cadd7-4d5f-4e02-9a28-1964e09a84ac.jpg',
+        },
+        {
+            id: 4,
+            name: 'Chocomint Frappe',
+            img: 'http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/e9a1e75a-272b-4041-be72-2cafcb53379c.jpg',
+        },
+        {
+            id: 5,
+            name: 'Green Tea Frappe',
+            img: 'http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/4edcbe34-60e9-4c0f-8f29-cb0697f0d88b.jpg',
+        },
+        {
+            id: 6,
+            name: 'Strawberry Yogurt Frappe',
+            img: 'http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/f55e6723-7c26-4fa6-bd34-73ac60d487ee.jpg',
+        },]
 
 
-    const [selected, setSelected] = useState("donut");
+    const [selected, setSelected] = useState(true);
 
 
     return (
@@ -45,12 +76,13 @@ function Menu() {
                 <div className="menu_con">
                     <h1>Our Menu</h1>
                     <div className="categories">
-                        <button>Donuts</button>
-                        <button>Drinks</button>
+                        <button onClick={() => setSelected(true)}>Donuts</button>
+                        <button onClick={() => setSelected(false)}>Drinks</button>
                         <button>Others</button>
                     </div>
                     <div className="menu_boxes">
-                        {data_donut.map(item => (<MenuBox key={item.id} item={item} />))}
+                        {selected && data_donut.map(item => (<MenuBox key={item.id} item={item} />))}
+                        {!selected && data_drinks.map(item => (<MenuBox key={item.id} item={item} />))}
                     </div>
                 </div>
             </div>

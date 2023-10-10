@@ -1,3 +1,25 @@
 .menubox {
     max-width: 300px;
+    box-shadow: 0 0 24px rgb(0, 0, 0, .4);
+    transition: .3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .top {
+        figure {
+            img {
+                height: 100%;
+                display: block;
+            }
+        }
+    }
+
+    .info {
+        padding: 10px 20px;
+        text-align: center;
+
+        h2 {}
+    }
 }

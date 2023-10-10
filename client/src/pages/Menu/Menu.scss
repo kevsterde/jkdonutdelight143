@@ -1,1 +1,44 @@
-#menu {}
+$color1: #ea4798;
+$color2: #d6b47a;
+$color3: #41322a;
+
+#menu {
+    .wrapper {
+        .menu_con {
+            padding: 80px 0;
+            text-align: center;
+
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            .categories {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+
+                button {
+                    border: none;
+                    background: none;
+                    font-size: 20px;
+                    text-transform: upper;
+                    cursor: pointer;
+
+                    &:hover {
+
+                        color: $color1;
+                    }
+                }
+            }
+
+            .menu_boxes {
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
